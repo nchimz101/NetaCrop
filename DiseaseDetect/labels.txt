@@ -1,0 +1,14 @@
+0 Cassava_Bacterial_Blight
+1 Cassava_Brown_Streak_Virus_Disease
+2 Cassava_Green_Mite
+3 Cassava_healthy
+4 Cassava_Mosaic_Disease
+5 Corn_(maize)___Common_rust_
+6 Corn_(maize)___healthy
+7 Corn_(maize)___Northern_Leaf_Blight
+8 Corn_(maize)_Gray_Leaf_Spot
+9 Tomato-Leaf___Bacterial_spot
+10 Tomato-Leaf___Early_blight
+11 Tomato-Leaf___healthy
+12 Tomato-Leaf___Late_blight
+13 Tomato-Leaf___Tomato_Yellow_Leaf_Curl_Virus

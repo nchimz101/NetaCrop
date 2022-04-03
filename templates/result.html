@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="{% static 'css/result.css'%}">
+
+    <hr>
+    <meta charset="UTF-8">
+    <title>Result</title>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-btn">Home</a>
+      <div class="content_body">
+        <h1>Result</h1>
+        <div class="content">
+          <div class="content__left">
+            <h3>Disease Detected: {{ans}}</h3>
+            <p><span>Name of Plant</span>: {{name}}</p>
+            <p><span>Scientific/Botanical Name</span>: {{scific}}</p>
+            <p>
+              <span>Plant Description</span>: <br> {{tomatodesc}}
+            </p>
+            <p><span> Disease Description</span>: <br> {{desc}}</p>
+            <p><span> Remedy</span>: <br>{{remedy}}</p>
+          </div>
+          <div class="content__right">
+
+            <img src="{{ img.userimage.url}}" alt="" />
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <footer>
+        <p>Designed by <a href="https://instagram.com/kumar.aditya04?utm_medium=copy_link" target="_blank">Nuzion</a>
+        </p>
+        <p>All rights reserved &copy; 2022</p>
+      </footer>
+
+  </body>
+
+</html>

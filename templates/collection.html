@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/collection.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Form</title>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="{% static 'images/logo.jpeg'%}" alt="" width="45">
+          <h2>NETACROP</h2>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="collection" class="active">My Collection</a></li>
+        </ul>
+      </nav>
+      <br><br>
+
+
+      <div class="collection__container">
+
+
+        {% for data in info %}
+        <div class="card">
+          <div class="img__box">
+            <a href="index.html"><img src="{{data.userimage.url }}" />
+          </div>
+          <div class="name__box">
+            <h2>{{ data.disease_name }}</h2>
+          </div>
+        </div>
+        {% endfor %}
+
+        <a href="index.html">
+          <div class="card add">
+            <div class="inner__add">
+              <i class="fas fa-plus"></i>
+              <h2> Add Item</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <footer>
+        <p>Designed by <a href="https://instagram.com/kumar.aditya04?utm_medium=copy_link" target="_blank">Nuzion</a>
+        </p>
+        <p>All rights reserved &copy; 2022</p>
+      </footer>
+      <script type="text/javascript">
+        const burger = document.querySelector(".burger")
+        const listItems = document.querySelectorAll("ul li")
+        burger.addEventListener("click", () => {
+          burger.classList.toggle("active")
+        })
+      </script>
+
+  </body>
+
+</html>

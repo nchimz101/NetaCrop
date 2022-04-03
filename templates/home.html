@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h2>NETACROP</h2>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="collection">My Collection</a></li>
+        </ul>
+      </nav>
+
+      <div class="main__content">
+        <h2>Plant Disease Detector</h2>
+        <p>Tomato</p>
+
+
+        <form method="post" enctype="multipart/form-data">
+          <div class="file-upload">
+            {% csrf_token %}
+
+            {{ form }} <br>
+          </div>
+
+          <button class="upload">Upload</button>
+      </div>
+      </form>
+
+      {% for data in info %}
+      <div class="col-md-4">
+        <h3 style="background-color:green;"><b>Disease Name :</b> {{ data.disease_name }}<br>
+
+          <b style="background-color:green;">Image : </b><img src="{{data.userimage.url }}" class="img-responsive"
+            style="width: 20%" />
+        </h3>
+
+      </div>
+      {% endfor %}
+
+      <script type="text/javascript">
+        const burger = document.querySelector(".burger")
+        const listItems = document.querySelectorAll("ul li")
+        burger.addEventListener("click", () => {
+          burger.classList.toggle("active")
+        })
+      </script>
+  </body>
+
+</html>
