@@ -93,7 +93,7 @@ jws==0.1.3
 Keras-Preprocessing==1.1.2
 keyring==18.0.1
 Kivy==2.0.0
-Kivy-Garden==0.1.4
+Kivy-Garden
 kiwisolver==1.3.1
 launchpadlib==1.10.13
 lazr.restfulclient==0.14.2
@@ -102,7 +102,7 @@ lazy-object-proxy==1.4.3
 libsass==0.17.0
 lockfile==0.12.2
 lxml==4.6.3
-macaroonbakery==1.3.1
+macaroonbakery
 Mako==1.0.7
 Markdown==3.3.3
 MarkupSafe==2.1.0
@@ -164,7 +164,7 @@ pymacaroons==0.13.0
 PyNaCl==1.3.0
 pyparsing==2.4.7
 PyPDF2==1.26.0
-Pyrebase==3.0.27
+Pyrebase
 pyRFC3339==1.1
 pyrsistent==0.17.3
 pyserial==3.4
