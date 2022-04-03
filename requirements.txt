@@ -13,7 +13,7 @@ bcrypt==3.1.7
 beautifulsoup4==4.9.3
 bleach==3.3.0
 blinker==1.4
-CacheControl==0.12.10
+CacheControl
 cached-property==1.5.2
 cachetools==4.2.1
 certifi==2019.11.28
@@ -36,12 +36,12 @@ django-heroku==0.3.1
 django-widget-tweaks==1.4.8
 djangorestframework==3.12.2
 docutils==0.14
-ebaysdk==2.1.5
+ebaysdk
 entrypoints==0.3
 fasteners==0.14.1
 feedparser==5.2.1
 filelock==3.6.0
-firebase==3.0.1
+firebase
 firebase-admin==5.1.0
 Flask==2.0.3
 flatbuffers==1.12
@@ -50,7 +50,7 @@ future==0.18.2
 gast==0.3.3
 gcloud==0.17.0
 gevent==20.9.0
-google-api-core==2.3.0
+google-api-core
 google-api-python-client==2.33.0
 google-auth==1.27.0
 google-auth-httplib2==0.1.0
