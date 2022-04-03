@@ -200,7 +200,7 @@ statsmodels
 systemd-python==234
 tensorboard==2.4.1
 tensorboard-plugin-wit==1.8.0
-tensorflow==2.4.1
+tensorflow
 tensorflow-estimator==2.4.0
 termcolor==1.1.0
 terminado==0.9.4
