@@ -25,7 +25,7 @@ SECRET_KEY = 'j!6m&8u$_o@%3)d9uf8zhl)i2etdzmios5_fnj)!lczf-*4+g-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://netacrop.herokuapp.com/']
 
 
 # Application definition
